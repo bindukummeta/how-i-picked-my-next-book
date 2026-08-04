@@ -1,0 +1,36 @@
+# --- Site settings ---
+title: How I Picked My Next Book
+tagline: One book leads to the next
+description: >-
+  A running trail through the books I read: what I just finished, the questions
+  it left me with, and how those questions led me to my next read.
+
+author: Himabindu
+email: 47143226+bindukummeta@users.noreply.github.com
+
+# The public address of the site (your custom domain)
+url: "https://iamhimabindu.com"
+baseurl: ""
+
+# --- Build settings ---
+theme: minima
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Show the GitHub link in the footer
+github_username: bindukummeta
+
+# Pages to show in the top navigation
+header_pages:
+  - about.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Don't copy these into the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
