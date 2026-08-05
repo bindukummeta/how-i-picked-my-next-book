@@ -1,30 +1,38 @@
-# The books on my reading trail, shown in the "Up Next" sidebar.
+# The books on my reading trail, shown in the "Reading Trail" sidebar.
 # To change the list, just edit this file: add, remove or reorder entries,
-# then commit and push. Each book needs a title; author is optional.
+# then commit and push. Each book needs a title.
+#
+# status – "done" (✅), "reading" (🔄 Currently Reading), or "upcoming" (⏳).
+#          Leave it out and the book is treated as "upcoming".
+# note   – a short "why" line shown under a finished book (e.g. "Why I chose it").
+# author – optional; shown only when there's no note.
 #
 # The arrow ABOVE a book links to the post explaining why I picked it next.
 # Add an optional "post:" field with that post's URL to make the arrow clickable
 # (leave it out and the arrow stays dimmed / non-clickable). Example:
 #   post: "/2026/08/12/why-a-little-history-of-the-world/"
 
-- title: "Sapiens: A Brief History of Humankind"
-  author: "Yuval Noah Harari"
+- title: "Sapiens"
+  status: "done"
+  note: "Why I chose it"
 
 - title: "A Little History of the World"
-  author: "E. H. Gombrich"
+  status: "done"
+  note: "Why it came next"
   # post: "/2026/08/12/why-a-little-history-of-the-world/"
 
 - title: "Prisoners of Geography"
-  author: "Tim Marshall"
+  status: "done"
+  note: "Why geography wasn't enough"
 
 - title: "Naked Economics"
-  author: "Charles Wheelan"
+  status: "reading"
 
 - title: "Material World"
-  author: "Ed Conway"
+  status: "upcoming"
 
 - title: "Why Nations Fail"
-  author: "Daron Acemoglu & James A. Robinson"
+  status: "upcoming"
 
 - title: "Chip War"
-  author: "Chris Miller"
+  status: "upcoming"

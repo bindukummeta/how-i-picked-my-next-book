@@ -62,11 +62,22 @@ The book series also shows the "Up Next" reading trail sidebar.
         <span class="trail-arrow is-disabled" aria-hidden="true">&darr;</span>
         {%- endif -%}
         {%- endunless -%}
-        <div class="reading-item">
+        {%- assign status = book.status | default: "upcoming" -%}
+        {%- case status -%}
+        {%- when "done" -%}{%- assign badge = "✅" -%}
+        {%- when "reading" -%}{%- assign badge = "🔄" -%}
+        {%- else -%}{%- assign badge = "⏳" -%}
+        {%- endcase -%}
+        <div class="reading-item is-{{ status }}">
           <span class="reading-num">{{ forloop.index }}</span>
           <span class="book-meta">
-            <span class="book-title">{{ book.title | escape }}</span>
-            {%- if book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
+            <span class="book-title">
+              <span class="book-status" aria-hidden="true">{{ badge }}</span>
+              {{ book.title | escape }}
+              {%- if status == "reading" -%}<span class="book-current">(Currently Reading)</span>{%- endif -%}
+            </span>
+            {%- if book.note -%}<span class="book-note">&#8627; {{ book.note | escape }}</span>
+            {%- elsif book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
           </span>
         </div>
         {%- endfor -%}

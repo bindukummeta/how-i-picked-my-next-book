@@ -190,3 +190,11 @@ a.trail-arrow:hover{ background:rgba(13,115,96,.12); transform:translateY(1px); 
 .book-meta{ display:flex; flex-direction:column; line-height:1.35; }
 .book-title{ font-weight:600; color:var(--ink); }
 .book-author{ color:var(--muted); font-size:.85rem; font-style:italic; }
+// status icon (✅ / 🔄 / ⏳) sitting before the title
+.book-status{ margin-right:5px; font-size:.9em; }
+// "why I chose it" note under a finished book
+.book-note{ color:var(--muted); font-size:.85rem; }
+// "(Currently Reading)" tag next to the book in progress
+.book-current{ margin-left:6px; color:var(--accent); font-size:.78rem; font-weight:600; }
+// upcoming books read a touch quieter
+.reading-item.is-upcoming .book-title{ color:var(--muted); font-weight:500; }
