@@ -3,7 +3,8 @@
 #
 # Fields:
 #   slug   – URL segment and the value posts use in their "series:" front matter
-#   name   – display name (with emoji)
+#   icon   – the emoji shown as a large badge on the card / series page
+#   name   – display name (without the emoji; icon is shown separately)
 #   short  – one-line description shown on the homepage card
 #   blurb  – longer intro shown at the top of the series landing page
 #   active – true = live and linked; false = shown as "Coming soon" (not clickable)
@@ -11,7 +12,8 @@
 # To launch a series later: write its posts with `series: <slug>`, then set active: true.
 
 - slug: "how-i-picked-my-next-book"
-  name: "📚 How I Picked My Next Book"
+  icon: "📚"
+  name: "How I Picked My Next Book"
   short: "A reading trail where every book leaves me with the next question."
   blurb: >-
     A reading journal with one rule: every book has to hand me the next one.
@@ -20,7 +22,8 @@
   active: true
 
 - slug: "hima-frameworks"
-  name: "🧠 Hima Frameworks"
+  icon: "🧠"
+  name: "Hima Frameworks"
   short: "Mental models and frameworks for thinking more clearly."
   blurb: >-
     Frameworks I use to make sense of hard problems — the mental models behind
@@ -28,7 +31,8 @@
   active: false
 
 - slug: "building-education-planner"
-  name: "🤖 Building Education Planner"
+  icon: "🤖"
+  name: "Building Education Planner"
   short: "Building an AI education planner, in the open."
   blurb: >-
     A build log for an AI-powered education planner — decisions, dead ends and
@@ -36,7 +40,8 @@
   active: false
 
 - slug: "hima-ai-university"
-  name: "🎓 Hima AI University"
+  icon: "🎓"
+  name: "Hima AI University"
   short: "Teaching myself AI, one course at a time."
   blurb: >-
     My self-designed curriculum for learning AI from the ground up — what I'm

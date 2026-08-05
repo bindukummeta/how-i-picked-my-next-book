@@ -13,11 +13,12 @@ The book series also shows the "Up Next" reading trail sidebar.
 {%- assign series_posts = site.posts | where: "series", slug -%}
 
 <section class="hero">
+  {%- if meta.icon -%}<div class="hero-icon" aria-hidden="true">{{ meta.icon }}</div>{%- endif -%}
   <h1 class="hero-title">{{ meta.name | default: page.title | escape }}</h1>
   {%- if meta.blurb -%}
   <p class="hero-intro">{{ meta.blurb | escape }}</p>
   {%- endif -%}
-  <hr class="hero-rule">
+  <div class="hero-flourish" aria-hidden="true"><span></span><span></span><span></span></div>
 </section>
 
 <div class="home-grid">
@@ -25,7 +26,7 @@ The book series also shows the "Up Next" reading trail sidebar.
     {%- if series_posts.size > 0 -%}
     <ul class="post-list">
       {%- for post in series_posts -%}
-      <li class="post-card">
+      <li class="post-card reveal">
         <a href="{{ post.url | relative_url }}">
           <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
             {{ post.date | date: "%B %-d, %Y" }}

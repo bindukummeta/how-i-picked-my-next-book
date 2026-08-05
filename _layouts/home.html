@@ -10,19 +10,19 @@ layout: default
   {%- if content != "" -%}
   <div class="hero-intro">{{ content }}</div>
   {%- endif -%}
-  <hr class="hero-rule">
+  <div class="hero-flourish" aria-hidden="true"><span></span><span></span><span></span></div>
 </section>
 
+{%- assign active_series = site.data.series | where: "active", true -%}
 <section class="series-grid-wrap">
-  <div class="series-grid">
-    {%- for s in site.data.series -%}
-    {%- if s.active -%}
-    <a class="series-card" href="{{ '/series/' | append: s.slug | append: '/' | relative_url }}">
+  <div class="series-grid{% if active_series.size == 1 %} is-single{% endif %}">
+    {%- for s in active_series -%}
+    <a class="series-card reveal" href="{{ '/series/' | append: s.slug | append: '/' | relative_url }}">
+      {%- if s.icon -%}<span class="series-card-icon" aria-hidden="true">{{ s.icon }}</span>{%- endif -%}
       <h2 class="series-card-title">{{ s.name | escape }}</h2>
       <p class="series-card-desc">{{ s.short | escape }}</p>
       <span class="series-card-cta">Explore the series &rarr;</span>
     </a>
-    {%- endif -%}
     {%- endfor -%}
   </div>
 </section>
