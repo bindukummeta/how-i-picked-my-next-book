@@ -52,6 +52,29 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 .hero-intro p{ margin:0; }
 .hero-rule{ width:64px; height:3px; background:var(--accent); border:0; border-radius:3px; margin:26px auto 0; }
 
+// homepage series hub
+.series-grid-wrap{ margin:48px 0; }
+.series-grid{ display:grid; grid-template-columns:1fr; gap:22px; }
+@media (min-width:720px){ .series-grid{ grid-template-columns:1fr 1fr; } }
+.series-card{
+  display:block; text-decoration:none; color:inherit; position:relative;
+  background:var(--paper-2); border:1px solid var(--line); border-radius:16px;
+  padding:26px 28px; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+a.series-card:hover{ transform:translateY(-3px); box-shadow:0 14px 34px rgba(18,63,55,.13); border-color:#cfe0d9; }
+.series-card-title{ margin:0 0 .3em; font-size:1.5rem; color:var(--ink); }
+a.series-card:hover .series-card-title{ color:var(--accent); }
+.series-card-desc{ color:#5b5147; margin:0 0 1em; font-size:1rem; }
+.series-card-cta{ color:var(--accent); font-weight:600; font-size:.95rem; }
+.series-card.is-soon{ opacity:.72; }
+.series-card.is-soon .series-card-title{ color:var(--muted); }
+.series-soon-badge{
+  display:inline-block; margin-bottom:.8em; font-size:.68rem; letter-spacing:.08em;
+  text-transform:uppercase; color:#97621a; background:rgba(193,133,47,.12);
+  border:1px solid rgba(193,133,47,.3); border-radius:999px; padding:3px 11px;
+}
+.series-empty{ margin:44px 0; color:var(--muted); font-style:italic; }
+
 // post list as cards
 .post-list{ list-style:none; margin:44px 0; padding:0; display:grid; gap:24px; }
 .post-list-heading{ display:none; }

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+{%- comment -%}
+Landing page for one series. Set `series: <slug>` in the page front matter.
+Lists only posts whose front matter `series:` matches this slug.
+The book series also shows the "Up Next" reading trail sidebar.
+{%- endcomment -%}
+
+{%- assign slug = page.series -%}
+{%- assign meta = site.data.series | where: "slug", slug | first -%}
+{%- assign series_posts = site.posts | where: "series", slug -%}
+
+<section class="hero">
+  <h1 class="hero-title">{{ meta.name | default: page.title | escape }}</h1>
+  {%- if meta.blurb -%}
+  <p class="hero-intro">{{ meta.blurb | escape }}</p>
+  {%- endif -%}
+  <hr class="hero-rule">
+</section>
+
+<div class="home-grid">
+  <div class="home-main">
+    {%- if series_posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in series_posts -%}
+      <li class="post-card">
+        <a href="{{ post.url | relative_url }}">
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+          <h2 class="post-card-title">{{ post.title | escape }}</h2>
+          {%- if post.tags.size > 0 -%}
+          <div class="post-tags">
+            {%- for tag in post.tags -%}<span class="tag">{{ tag }}</span>{%- endfor -%}
+          </div>
+          {%- endif -%}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 45 }}</p>
+          <span class="read-more">Continue reading &rarr;</span>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- else -%}
+    <p class="series-empty">No posts in this series yet — the first one is on its way.</p>
+    {%- endif -%}
+  </div>
+
+  {%- if slug == "how-i-picked-my-next-book" and site.data.reading_list.size > 0 -%}
+  <aside class="home-sidebar">
+    <div class="sidebar-card">
+      <h3 class="sidebar-heading">Up Next</h3>
+      <p class="sidebar-sub">Books waiting on my shelf</p>
+      <div class="reading-trail">
+        {%- for book in site.data.reading_list -%}
+        {%- unless forloop.first -%}
+        {%- if book.post and book.post != "" -%}
+        <a class="trail-arrow" href="{{ book.post | relative_url }}" aria-label="Why I picked {{ book.title | escape }}">&darr;</a>
+        {%- else -%}
+        <span class="trail-arrow is-disabled" aria-hidden="true">&darr;</span>
+        {%- endif -%}
+        {%- endunless -%}
+        <div class="reading-item">
+          <span class="reading-num">{{ forloop.index }}</span>
+          <span class="book-meta">
+            <span class="book-title">{{ book.title | escape }}</span>
+            {%- if book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
+          </span>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </aside>
+  {%- endif -%}
+</div>

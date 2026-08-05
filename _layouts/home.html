@@ -13,55 +13,22 @@ layout: default
   <hr class="hero-rule">
 </section>
 
-<div class="home-grid">
-  <div class="home-main">
-    {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li class="post-card">
-        <a href="{{ post.url | relative_url }}">
-          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-          <h2 class="post-card-title">{{ post.title | escape }}</h2>
-          {%- if post.tags.size > 0 -%}
-          <div class="post-tags">
-            {%- for tag in post.tags -%}<span class="tag">{{ tag }}</span>{%- endfor -%}
-          </div>
-          {%- endif -%}
-          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 45 }}</p>
-          <span class="read-more">Continue reading &rarr;</span>
-        </a>
-      </li>
-      {%- endfor -%}
-    </ul>
-    {%- endif -%}
-  </div>
-
-  {%- if site.data.reading_list.size > 0 -%}
-  <aside class="home-sidebar">
-    <div class="sidebar-card">
-      <h3 class="sidebar-heading">Up Next</h3>
-      <p class="sidebar-sub">Books waiting on my shelf</p>
-      <div class="reading-trail">
-        {%- for book in site.data.reading_list -%}
-        {%- unless forloop.first -%}
-        {%- if book.post and book.post != "" -%}
-        <a class="trail-arrow" href="{{ book.post | relative_url }}" aria-label="Why I picked {{ book.title | escape }}">&darr;</a>
-        {%- else -%}
-        <span class="trail-arrow is-disabled" aria-hidden="true">&darr;</span>
-        {%- endif -%}
-        {%- endunless -%}
-        <div class="reading-item">
-          <span class="reading-num">{{ forloop.index }}</span>
-          <span class="book-meta">
-            <span class="book-title">{{ book.title | escape }}</span>
-            {%- if book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
-          </span>
-        </div>
-        {%- endfor -%}
-      </div>
+<section class="series-grid-wrap">
+  <div class="series-grid">
+    {%- for s in site.data.series -%}
+    {%- if s.active -%}
+    <a class="series-card" href="{{ '/series/' | append: s.slug | append: '/' | relative_url }}">
+      <h2 class="series-card-title">{{ s.name | escape }}</h2>
+      <p class="series-card-desc">{{ s.short | escape }}</p>
+      <span class="series-card-cta">Explore the series &rarr;</span>
+    </a>
+    {%- else -%}
+    <div class="series-card is-soon" aria-disabled="true">
+      <span class="series-soon-badge">Coming soon</span>
+      <h2 class="series-card-title">{{ s.name | escape }}</h2>
+      <p class="series-card-desc">{{ s.short | escape }}</p>
     </div>
-  </aside>
-  {%- endif -%}
-</div>
+    {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>

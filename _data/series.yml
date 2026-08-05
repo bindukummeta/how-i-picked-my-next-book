@@ -1,0 +1,44 @@
+# The series that make up "Following Curiosity".
+# Each series gets a card on the homepage and its own landing page at /series/<slug>/.
+#
+# Fields:
+#   slug   – URL segment and the value posts use in their "series:" front matter
+#   name   – display name (with emoji)
+#   short  – one-line description shown on the homepage card
+#   blurb  – longer intro shown at the top of the series landing page
+#   active – true = live and linked; false = shown as "Coming soon" (not clickable)
+#
+# To launch a series later: write its posts with `series: <slug>`, then set active: true.
+
+- slug: "how-i-picked-my-next-book"
+  name: "📚 How I Picked My Next Book"
+  short: "A reading trail where every book hands me the next one."
+  blurb: >-
+    A reading journal with one rule: every book has to hand me the next one.
+    What I just finished, the questions it left me with, and how those questions
+    led me to my next read.
+  active: true
+
+- slug: "hima-frameworks"
+  name: "🧠 Hima Frameworks"
+  short: "Mental models and frameworks for thinking more clearly."
+  blurb: >-
+    Frameworks I use to make sense of hard problems — the mental models behind
+    how I think, decide and build.
+  active: false
+
+- slug: "building-education-planner"
+  name: "🤖 Building Education Planner"
+  short: "Building an AI education planner, in the open."
+  blurb: >-
+    A build log for an AI-powered education planner — decisions, dead ends and
+    what actually ships.
+  active: false
+
+- slug: "hima-ai-university"
+  name: "🎓 Hima AI University"
+  short: "Teaching myself AI, one course at a time."
+  blurb: >-
+    My self-designed curriculum for learning AI from the ground up — what I'm
+    studying, what's clicking, and what's next.
+  active: false

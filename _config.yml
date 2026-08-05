@@ -1,9 +1,9 @@
 # --- Site settings ---
-title: How I Picked My Next Book
-tagline: One book leads to the next
+title: Following Curiosity
+tagline: Where one question leads to the next
 description: >-
-  A running trail through the books I read: what I just finished, the questions
-  it left me with, and how those questions led me to my next read.
+  Following curiosity across books, ideas and projects — a growing map of how
+  history, geography, economics, technology, psychology and AI connect.
 
 author: Himabindu
 email: hello@iamhimabindu.com
@@ -19,7 +19,16 @@ permalink: /:year/:month/:day/:title/
 
 # Pages to show in the top navigation
 header_pages:
+  - series/how-i-picked-my-next-book.md
   - about.md
+
+# Default any post to the book series unless it sets its own `series:`
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      series: "how-i-picked-my-next-book"
 
 plugins:
   - jekyll-feed
