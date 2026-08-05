@@ -168,33 +168,21 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
 .sidebar-heading::before{ content:"📚"; margin-right:8px; }
 .sidebar-sub{ color:var(--muted); font-size:.85rem; margin:.15em 0 1.1em; }
 .reading-trail{ display:flex; flex-direction:column; }
-.reading-item{ display:flex; gap:13px; align-items:flex-start; padding:6px 0; }
-// clickable arrow between two books = the "why I picked the next one" post
-.trail-arrow{
-  width:26px; height:24px; margin:1px 0; align-self:flex-start;
-  display:flex; align-items:center; justify-content:center;
-  font-size:1.15rem; line-height:1; color:var(--accent); font-weight:700;
-  text-decoration:none; border-radius:8px;
-  transition:background .15s ease, transform .15s ease, color .15s ease;
-}
-a.trail-arrow:hover{ background:rgba(13,115,96,.12); transform:translateY(1px); }
-.trail-arrow.is-disabled{ color:rgba(13,115,96,.28); }
-.reading-num{
-  position:relative; z-index:1;
-  flex:0 0 auto; width:26px; height:26px; border-radius:50%;
-  background:#dcece7; color:var(--accent);
-  box-shadow:0 0 0 3px var(--paper-2);
-  font-family:"Fraunces",serif; font-weight:600; font-size:.82rem;
-  display:flex; align-items:center; justify-content:center;
-}
-.book-meta{ display:flex; flex-direction:column; line-height:1.35; }
+// each step on the trail; a faint line connects them into a path
+.reading-item{ position:relative; padding:8px 0 14px 4px; }
+.reading-item + .reading-item{ margin-top:-2px; }
+.book-meta{ display:flex; flex-direction:column; line-height:1.4; }
 .book-title{ font-weight:600; color:var(--ink); }
-.book-author{ color:var(--muted); font-size:.85rem; font-style:italic; }
-// status icon (✅ / 🔄 / ⏳) sitting before the title
-.book-status{ margin-right:5px; font-size:.9em; }
-// "why I chose it" note under a finished book
-.book-note{ color:var(--muted); font-size:.85rem; }
-// "(Currently Reading)" tag next to the book in progress
-.book-current{ margin-left:6px; color:var(--accent); font-size:.78rem; font-weight:600; }
-// upcoming books read a touch quieter
-.reading-item.is-upcoming .book-title{ color:var(--muted); font-weight:500; }
+// checkmark / status icon before the title
+.book-status{ margin-right:6px; color:var(--accent); font-weight:700; }
+// the "↳ why it led me to the next" note under a finished book
+.book-note{ color:var(--muted); font-size:.85rem; margin-top:.1em; }
+a.book-note{ text-decoration:none; }
+a.book-note:hover{ color:var(--accent); text-decoration:underline; text-underline-offset:2px; }
+// the live end of the trail: the open question pulling me forward
+.reading-item.is-question{ margin-top:8px; padding-top:14px; border-top:1px dashed var(--line); }
+.reading-item.is-question .book-status{ color:var(--accent-2); }
+.current-question{
+  margin-top:.35em; color:var(--accent); font-style:italic;
+  font-size:.98rem; line-height:1.4;
+}

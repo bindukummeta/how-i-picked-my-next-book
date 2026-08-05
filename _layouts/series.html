@@ -48,39 +48,41 @@ The book series also shows the "Up Next" reading trail sidebar.
     {%- endif -%}
   </div>
 
-  {%- if slug == "how-i-picked-my-next-book" and site.data.reading_list.size > 0 -%}
+  {%- assign trail = site.data.reading_list -%}
+  {%- if slug == "how-i-picked-my-next-book" and trail.books.size > 0 -%}
   <aside class="home-sidebar">
     <div class="sidebar-card">
       <h3 class="sidebar-heading">Reading Trail</h3>
-      <p class="sidebar-sub">Books waiting on my shelf</p>
+      <p class="sidebar-sub">The path so far — each book handed me the next question</p>
       <div class="reading-trail">
-        {%- for book in site.data.reading_list -%}
-        {%- unless forloop.first -%}
-        {%- if book.post and book.post != "" -%}
-        <a class="trail-arrow" href="{{ book.post | relative_url }}" aria-label="Why I picked {{ book.title | escape }}">&darr;</a>
-        {%- else -%}
-        <span class="trail-arrow is-disabled" aria-hidden="true">&darr;</span>
-        {%- endif -%}
-        {%- endunless -%}
-        {%- assign status = book.status | default: "upcoming" -%}
-        {%- case status -%}
-        {%- when "done" -%}{%- assign badge = "✅" -%}
-        {%- when "reading" -%}{%- assign badge = "🔄" -%}
-        {%- else -%}{%- assign badge = "⏳" -%}
-        {%- endcase -%}
-        <div class="reading-item is-{{ status }}">
-          <span class="reading-num">{{ forloop.index }}</span>
+        {%- for book in trail.books -%}
+        <div class="reading-item is-done">
           <span class="book-meta">
             <span class="book-title">
-              <span class="book-status" aria-hidden="true">{{ badge }}</span>
+              <span class="book-status" aria-hidden="true">✓</span>
               {{ book.title | escape }}
-              {%- if status == "reading" -%}<span class="book-current">(Currently Reading)</span>{%- endif -%}
             </span>
-            {%- if book.note -%}<span class="book-note">&#8627; {{ book.note | escape }}</span>
-            {%- elsif book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
+            {%- if book.note -%}
+            {%- if book.post and book.post != "" -%}
+            <a class="book-note" href="{{ book.post | relative_url }}">&#8627; {{ book.note | escape }}</a>
+            {%- else -%}
+            <span class="book-note">&#8627; {{ book.note | escape }}</span>
+            {%- endif -%}
+            {%- endif -%}
           </span>
         </div>
         {%- endfor -%}
+        {%- if trail.current_question and trail.current_question != "" -%}
+        <div class="reading-item is-question">
+          <span class="book-meta">
+            <span class="book-title">
+              <span class="book-status" aria-hidden="true">🔄</span>
+              Current Question:
+            </span>
+            <span class="current-question">&ldquo;{{ trail.current_question | escape }}&rdquo;</span>
+          </span>
+        </div>
+        {%- endif -%}
       </div>
     </div>
   </aside>
