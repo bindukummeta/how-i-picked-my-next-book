@@ -6,7 +6,7 @@ description: >-
   it left me with, and how those questions led me to my next read.
 
 author: Himabindu
-email: 47143226+bindukummeta@users.noreply.github.com
+email: hello@iamhimabindu.com
 
 # The public address of the site (your custom domain)
 url: "https://iamhimabindu.com"
@@ -16,9 +16,6 @@ baseurl: ""
 theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-
-# Show the GitHub link in the footer
-github_username: bindukummeta
 
 # Pages to show in the top navigation
 header_pages:
