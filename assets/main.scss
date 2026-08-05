@@ -31,11 +31,13 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; text-decoration-t
 // accessible focus ring in the brand colour
 a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:4px; }
 
-// gentle fade/rise as elements enter the viewport
-.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
-.reveal.is-in{ opacity:1; transform:none; }
+// gentle fade/rise as elements enter the viewport.
+// elements are visible by default (no-JS safe); the script adds .reveal-on to
+// <body> to enable the hidden→shown animation only when JS is running.
+.reveal-on .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+.reveal-on .reveal.is-in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion:reduce){
-  .reveal{ opacity:1; transform:none; transition:none; }
+  .reveal-on .reveal{ opacity:1; transform:none; transition:none; }
 }
 
 // header / nav
