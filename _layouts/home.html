@@ -43,17 +43,24 @@ layout: default
     <div class="sidebar-card">
       <h3 class="sidebar-heading">Up Next</h3>
       <p class="sidebar-sub">Books waiting on my shelf</p>
-      <ol class="reading-list">
+      <div class="reading-trail">
         {%- for book in site.data.reading_list -%}
-        <li class="reading-item">
+        {%- unless forloop.first -%}
+        {%- if book.post and book.post != "" -%}
+        <a class="trail-arrow" href="{{ book.post | relative_url }}" aria-label="Why I picked {{ book.title | escape }}">&darr;</a>
+        {%- else -%}
+        <span class="trail-arrow is-disabled" aria-hidden="true">&darr;</span>
+        {%- endif -%}
+        {%- endunless -%}
+        <div class="reading-item">
           <span class="reading-num">{{ forloop.index }}</span>
           <span class="book-meta">
             <span class="book-title">{{ book.title | escape }}</span>
             {%- if book.author -%}<span class="book-author">{{ book.author | escape }}</span>{%- endif -%}
           </span>
-        </li>
+        </div>
         {%- endfor -%}
-      </ol>
+      </div>
     </div>
   </aside>
   {%- endif -%}

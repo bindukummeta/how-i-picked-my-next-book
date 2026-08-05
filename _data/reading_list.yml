@@ -1,12 +1,18 @@
-# The books waiting on my shelf, shown in the "Up Next" sidebar.
+# The books on my reading trail, shown in the "Up Next" sidebar.
 # To change the list, just edit this file: add, remove or reorder entries,
 # then commit and push. Each book needs a title; author is optional.
+#
+# The arrow ABOVE a book links to the post explaining why I picked it next.
+# Add an optional "post:" field with that post's URL to make the arrow clickable
+# (leave it out and the arrow stays dimmed / non-clickable). Example:
+#   post: "/2026/08/12/why-a-little-history-of-the-world/"
 
 - title: "Sapiens: A Brief History of Humankind"
   author: "Yuval Noah Harari"
 
 - title: "A Little History of the World"
   author: "E. H. Gombrich"
+  # post: "/2026/08/12/why-a-little-history-of-the-world/"
 
 - title: "Prisoners of Geography"
   author: "Tim Marshall"
