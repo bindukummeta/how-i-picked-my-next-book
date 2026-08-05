@@ -19,7 +19,6 @@ permalink: /:year/:month/:day/:title/
 
 # Pages to show in the top navigation
 header_pages:
-  - series/how-i-picked-my-next-book.md
   - about.md
 
 # Default any post to the book series unless it sets its own `series:`
