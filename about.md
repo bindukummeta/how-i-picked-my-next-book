@@ -4,20 +4,28 @@ title: About
 permalink: /about/
 ---
 
-I'm Himabindu, and this is where I keep track of how one book leads me to the
-next.
+I'm Himabindu — an engineer, a mother, and someone who never quite stopped asking
+"but why?" **Following Curiosity** is where I follow questions wherever they lead,
+across books, ideas and projects.
 
-Every time I finish a book, I don't just move on. I sit with it for a moment and
-ask: What stayed with me? What questions did it open up that it didn't quite
-answer? Those leftover questions are usually what decide my next read.
+More than a decade ago I stopped reading — not because I stopped loving books, but
+because life became full. Somewhere along the way I realised I'd become so busy
+living life that I'd stopped exploring it. This is how I found my way back: by
+following one question to the next, and slowly building a map of how history,
+geography, economics, technology, psychology, religion, education and AI all
+connect.
 
-So each post here follows the same shape:
+This isn't a place for reviews or tutorials. It's a record of a journey — a set of
+trails you're welcome to follow along.
 
-- **The book I just finished** — a short take on what it was about and what it
-  did to me.
-- **Questions it left me with** — the threads I couldn't stop pulling on.
-- **How it led to my next book** — the title I picked up next, and why this book
-  sent me there.
+## The trails
 
-If you like following a reader's trail rather than a list of reviews, you're in
-the right place.
+- **📚 How I Picked My Next Book** — a reading trail where every book leaves me
+  with the next question. *(live — [read it](/series/how-i-picked-my-next-book/))*
+- **🧠 Hima Frameworks** — mental models for thinking more clearly. *(coming soon)*
+- **🤖 Building Education Planner** — building an AI education planner, in the open.
+  *(coming soon)*
+- **🎓 Hima AI University** — teaching myself AI, one course at a time.
+  *(coming soon)*
+
+Say hello anytime: [hello@iamhimabindu.com](mailto:hello@iamhimabindu.com).
