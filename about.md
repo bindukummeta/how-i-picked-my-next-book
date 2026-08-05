@@ -4,28 +4,48 @@ title: About
 permalink: /about/
 ---
 
-I'm Himabindu — an engineer, a mother, and someone who never quite stopped asking
-"but why?" **Following Curiosity** is where I follow questions wherever they lead,
-across books, ideas and projects.
+Hi, I'm Hima.
 
-More than a decade ago I stopped reading — not because I stopped loving books, but
-because life became full. Somewhere along the way I realised I'd become so busy
-living life that I'd stopped exploring it. This is how I found my way back: by
-following one question to the next, and slowly building a map of how history,
-geography, economics, technology, psychology, religion, education and AI all
-connect.
+I'm a software engineer, builder and lifelong learner.
 
-This isn't a place for reviews or tutorials. It's a record of a journey — a set of
-trails you're welcome to follow along.
+I spend a lot of time asking questions.
 
-## The trails
+Sometimes those questions lead me to books.
 
-- **📚 How I Picked My Next Book** — a reading trail where every book leaves me
-  with the next question. *(live — [read it](/series/how-i-picked-my-next-book/))*
-- **🧠 Hima Frameworks** — mental models for thinking more clearly. *(coming soon)*
-- **🤖 Building Education Planner** — building an AI education planner, in the open.
-  *(coming soon)*
-- **🎓 Hima AI University** — teaching myself AI, one course at a time.
-  *(coming soon)*
+Sometimes they lead me to software.
+
+Sometimes they become frameworks, experiments or entirely new projects.
+
+This website is where I connect those journeys.
+
+You'll find me exploring history, geography, economics, technology, psychology,
+education, artificial intelligence and quality engineering — not as separate
+subjects, but as pieces of the same puzzle.
+
+I'm particularly interested in one question:
+
+**How do we turn curiosity into capability?**
+
+That question sits behind everything I build.
+
+- **Following Curiosity** documents how one question leads to another.
+- **Education Planner** explores how AI can help children learn better.
+- **Hima AI University** is my long-term vision for helping experienced software
+  professionals become AI engineers.
+- **Hima OS** is my personal laboratory for experimenting with productivity,
+  learning and AI workflows.
+- Along the way, I develop **frameworks** that emerge from patterns I notice across
+  books, projects and real life.
+
+This isn't a place where I've arrived with all the answers.
+
+It's where I learn in public.
+
+Read. Build. Test. Reflect. Repeat.
+
+If you're curious about how ideas connect — and how they become something useful —
+welcome.
+
+Let's follow the questions together.
 
 Say hello anytime: [hello@iamhimabindu.com](mailto:hello@iamhimabindu.com).

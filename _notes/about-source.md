@@ -15,56 +15,65 @@ How to use it:
 
 ## Short bio (one-liner)
 
-I'm Himabindu — an engineer, mother and lifelong-curious human, mapping how the
-world's ideas connect, one question at a time.
+I'm Hima — a software engineer, builder and lifelong learner, connecting the
+journeys where curiosity turns into capability.
 
-## About me (longer)
+## About me (full — current published version)
 
-More than a decade ago, I stopped reading — not because I stopped loving books,
-but because life became full. I became an engineer, a mother, a wife, a friend
-and a responsible adult, and for years my learning came from people, work and
-everyday life rather than from books.
+Hi, I'm Hima.
 
-Somewhere along the way I realised I'd become so busy living life that I'd stopped
-exploring it. **Following Curiosity** is how I found my way back: a place to keep
-following questions wherever they lead — across books, ideas and projects — and to
-slowly build a map of how history, geography, economics, technology, psychology,
-religion, education and AI all connect.
+I'm a software engineer, builder and lifelong learner.
 
-[OPTIONAL: add a sentence about where you're based / what you do professionally —
-e.g. "I'm a [role] based in [place]."]
+I spend a lot of time asking questions. Sometimes those questions lead me to
+books. Sometimes they lead me to software. Sometimes they become frameworks,
+experiments or entirely new projects. This website is where I connect those
+journeys.
 
-## What "Following Curiosity" is
+You'll find me exploring history, geography, economics, technology, psychology,
+education, artificial intelligence and quality engineering — not as separate
+subjects, but as pieces of the same puzzle.
 
-Not a collection of reviews or tutorials — a record of a journey. Every book I
-read changes the questions I ask; those questions lead to the next book, the next
-idea, the next project. Over time these trails add up to one evolving picture of
-how our world works.
+I'm particularly interested in one question: **How do we turn curiosity into
+capability?** That question sits behind everything I build.
+
+This isn't a place where I've arrived with all the answers. It's where I learn in
+public. Read. Build. Test. Reflect. Repeat.
+
+If you're curious about how ideas connect — and how they become something useful —
+welcome. Let's follow the questions together.
 
 ## Projects / Series
 
-Add each project here as you launch it. Template:
+Note: this list reflects the bio narrative. The live site's series cards
+(`_data/series.yml`) may differ until we reconcile them — see "restructure" TODO.
 
-    ### [emoji] [Series name]
+Template for adding a new one:
+
+    ### [emoji] [Project name]
     [One or two lines: what it is and why it exists.]
     Status: [live / coming soon]  ·  Link: /series/[slug]/
 
-### 📚 How I Picked My Next Book
-A reading trail where every book leaves me with the next question. What I just
-finished, the questions it raised, and how those questions chose my next read.
-Status: live  ·  Link: /series/how-i-picked-my-next-book/
+### Following Curiosity
+Documents how one question leads to another.
+Status: live (umbrella) · Link: /
 
-### 🧠 Hima Frameworks
-Mental models and frameworks for thinking more clearly.
-Status: coming soon  ·  Link: /series/hima-frameworks/
+### Education Planner
+Explores how AI can help children learn better.
+Status: coming soon · Link: /series/building-education-planner/
 
-### 🤖 Building Education Planner
-Building an AI education planner, in the open.
-Status: coming soon  ·  Link: /series/building-education-planner/
+### Hima AI University
+Long-term vision for helping experienced software professionals become AI
+engineers.
+Status: coming soon · Link: /series/hima-ai-university/
 
-### 🎓 Hima AI University
-Teaching myself AI, one course at a time.
-Status: coming soon  ·  Link: /series/hima-ai-university/
+### Hima OS
+Personal laboratory for experimenting with productivity, learning and AI
+workflows.
+Status: coming soon · Link: [TBD — no series page yet]
+
+### Frameworks
+Frameworks that emerge from patterns I notice across books, projects and real life.
+Status: coming soon · Link: /series/hima-frameworks/
 
 ## Contact
 
