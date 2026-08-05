@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Hima.
+Hi, I am Himabindu.
 
 I'm a software engineer, builder and lifelong learner.
 
@@ -16,32 +16,39 @@ Sometimes they lead me to software.
 
 Sometimes they become frameworks, experiments or entirely new projects.
 
-This website is where I connect those journeys.
+This website is where those journeys come together.
+
+I'm less interested in collecting knowledge than in connecting it.
 
 You'll find me exploring history, geography, economics, technology, psychology,
 education, artificial intelligence and quality engineering — not as separate
 subjects, but as pieces of the same puzzle.
 
-I'm particularly interested in one question:
+At the centre of everything I build is one question:
 
 **How do we turn curiosity into capability?**
 
-That question sits behind everything I build.
+That question quietly shapes every project on this site.
 
 - **Following Curiosity** documents how one question leads to another.
 - **Education Planner** explores how AI can help children learn better.
 - **Hima AI University** is my long-term vision for helping experienced software
-  professionals become AI engineers.
-- **Hima OS** is my personal laboratory for experimenting with productivity,
-  learning and AI workflows.
+  professionals become confident AI engineers.
+- **Hima OS** is my personal laboratory for experimenting with learning systems,
+  productivity and AI workflows.
 - Along the way, I develop **frameworks** that emerge from patterns I notice across
-  books, projects and real life.
+  books, projects and everyday life.
+
+I don't see these as separate projects. They're all different ways of exploring
+the same idea:
+
+**How do people learn, think and build better?**
 
 This isn't a place where I've arrived with all the answers.
 
 It's where I learn in public.
 
-Read. Build. Test. Reflect. Repeat.
+Read. Think. Build. Test. Reflect. Repeat.
 
 If you're curious about how ideas connect — and how they become something useful —
 welcome.

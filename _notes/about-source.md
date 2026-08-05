@@ -15,29 +15,34 @@ How to use it:
 
 ## Short bio (one-liner)
 
-I'm Hima — a software engineer, builder and lifelong learner, connecting the
-journeys where curiosity turns into capability.
+I'm Himabindu — a software engineer, builder and lifelong learner, less interested
+in collecting knowledge than in connecting it.
 
 ## About me (full — current published version)
 
-Hi, I'm Hima.
+Hi, I am Himabindu.
 
 I'm a software engineer, builder and lifelong learner.
 
 I spend a lot of time asking questions. Sometimes those questions lead me to
 books. Sometimes they lead me to software. Sometimes they become frameworks,
-experiments or entirely new projects. This website is where I connect those
-journeys.
+experiments or entirely new projects. This website is where those journeys come
+together.
+
+I'm less interested in collecting knowledge than in connecting it.
 
 You'll find me exploring history, geography, economics, technology, psychology,
 education, artificial intelligence and quality engineering — not as separate
 subjects, but as pieces of the same puzzle.
 
-I'm particularly interested in one question: **How do we turn curiosity into
-capability?** That question sits behind everything I build.
+At the centre of everything I build is one question: **How do we turn curiosity
+into capability?** That question quietly shapes every project on this site.
+
+I don't see these as separate projects. They're all different ways of exploring
+the same idea: **How do people learn, think and build better?**
 
 This isn't a place where I've arrived with all the answers. It's where I learn in
-public. Read. Build. Test. Reflect. Repeat.
+public. Read. Think. Build. Test. Reflect. Repeat.
 
 If you're curious about how ideas connect — and how they become something useful —
 welcome. Let's follow the questions together.
