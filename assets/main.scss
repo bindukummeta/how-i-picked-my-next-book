@@ -115,6 +115,11 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
 .site-footer{ border-top:1px solid var(--line); background:transparent; color:var(--muted); }
 .footer-heading{ font-family:"Fraunces",serif; color:var(--ink); }
 .footer-role{ font-family:"Fraunces",serif; font-style:italic; color:var(--accent); margin:.1em 0 .6em; font-size:.95rem; }
+// space the two footer columns further apart (theme default packs them tight)
+.footer-col-wrapper{ display:flex; flex-wrap:wrap; gap:48px; margin-left:0; }
+.footer-col{ float:none; width:auto; padding:0; }
+.footer-col-1{ flex:0 0 auto; }
+.footer-col-3{ flex:1 1 320px; max-width:520px; }
 
 // home two-column layout (posts + reading-list sidebar)
 .home-grid{ display:grid; grid-template-columns:1fr; gap:0; }
