@@ -114,6 +114,7 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
 // footer
 .site-footer{ border-top:1px solid var(--line); background:transparent; color:var(--muted); }
 .footer-heading{ font-family:"Fraunces",serif; color:var(--ink); }
+.footer-role{ font-family:"Fraunces",serif; font-style:italic; color:var(--accent); margin:.1em 0 .6em; font-size:.95rem; }
 
 // home two-column layout (posts + reading-list sidebar)
 .home-grid{ display:grid; grid-template-columns:1fr; gap:0; }
