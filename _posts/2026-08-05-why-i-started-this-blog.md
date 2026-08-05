@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to my reading journey"
+title: "Why I started writing in my 40's"
 date: 2026-08-05 09:00:00 +0100
 series: "how-i-picked-my-next-book"
 tags: [meta]
