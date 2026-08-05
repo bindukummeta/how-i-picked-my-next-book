@@ -13,7 +13,6 @@ The book series also shows the "Up Next" reading trail sidebar.
 {%- assign series_posts = site.posts | where: "series", slug -%}
 
 <section class="hero">
-  {%- if meta.icon -%}<div class="hero-icon" aria-hidden="true">{{ meta.icon }}</div>{%- endif -%}
   <h1 class="hero-title">{{ meta.name | default: page.title | escape }}</h1>
   {%- if meta.blurb -%}
   <p class="hero-intro">{{ meta.blurb | escape }}</p>
@@ -75,10 +74,7 @@ The book series also shows the "Up Next" reading trail sidebar.
         {%- if trail.current_question and trail.current_question != "" -%}
         <div class="reading-item is-question">
           <span class="book-meta">
-            <span class="book-title">
-              <span class="book-status" aria-hidden="true">🔄</span>
-              Current Question:
-            </span>
+            <span class="book-title">Current Question:</span>
             <span class="current-question">&ldquo;{{ trail.current_question | escape }}&rdquo;</span>
           </span>
         </div>

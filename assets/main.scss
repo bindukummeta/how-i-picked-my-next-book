@@ -54,7 +54,7 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 // hero
 .hero{ text-align:center; padding:56px 8px 36px; border-bottom:1px solid var(--line); }
 .hero-title{
-  font-size:clamp(2.4rem,6vw,3.6rem); margin:0 0 .25em; font-weight:700;
+  font-size:clamp(2.1rem,5vw,3.0rem); margin:0 0 .25em; font-weight:700;
   background:linear-gradient(180deg,var(--ink),#123f37);
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
@@ -62,8 +62,6 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 .hero-intro{ max-width:600px; margin:0 auto; color:#5b5147; font-size:1.08rem; }
 .hero-intro p{ margin:0; }
 .hero-rule{ width:64px; height:3px; background:var(--accent); border:0; border-radius:3px; margin:26px auto 0; }
-// large emoji badge above a series-page title
-.hero-icon{ font-size:2.6rem; line-height:1; margin-bottom:.35em; }
 // soft dotted flourish under the hero
 .hero-flourish{ display:flex; gap:9px; justify-content:center; align-items:center; margin-top:24px; }
 .hero-flourish span{ width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.5; }
@@ -88,11 +86,6 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 }
 a.series-card:hover{ transform:translateY(-3px); box-shadow:0 14px 34px rgba(18,63,55,.13); border-color:#cfe0d9; }
 a.series-card:hover::before{ opacity:1; }
-.series-card-icon{
-  display:inline-flex; align-items:center; justify-content:center;
-  width:54px; height:54px; margin-bottom:14px; font-size:1.7rem; line-height:1;
-  background:rgba(13,115,96,.09); border-radius:14px;
-}
 .series-card-title{ margin:0 0 .3em; font-size:1.5rem; color:var(--ink); }
 a.series-card:hover .series-card-title{ color:var(--accent); }
 .series-card-desc{ color:#5b5147; margin:0 0 1em; font-size:1rem; }
@@ -165,7 +158,6 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
 @media (min-width:820px){ .home-sidebar{ position:sticky; top:100px; } }
 .sidebar-card{ background:var(--paper-2); border:1px solid var(--line); border-radius:16px; padding:22px 24px 10px; }
 .sidebar-heading{ font-family:"Fraunces",serif; margin:0; font-size:1.3rem; color:var(--ink); }
-.sidebar-heading::before{ content:"📚"; margin-right:8px; }
 .sidebar-sub{ color:var(--muted); font-size:.85rem; margin:.15em 0 1.1em; }
 .reading-trail{ display:flex; flex-direction:column; }
 // each step on the trail; a faint line connects them into a path
