@@ -91,3 +91,31 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 // footer
 .site-footer{ border-top:1px solid var(--line); background:transparent; color:var(--muted); }
 .footer-heading{ font-family:"Fraunces",serif; color:var(--ink); }
+
+// home two-column layout (posts + reading-list sidebar)
+.home-grid{ display:grid; grid-template-columns:1fr; gap:0; }
+@media (min-width:820px){
+  .wrapper:has(.home-grid){ max-width:1080px; }
+  .home-grid{ grid-template-columns:minmax(0,1fr) 290px; gap:46px; align-items:start; }
+}
+.home-main .post-list{ margin-top:36px; }
+
+// reading-list sidebar
+.home-sidebar{ margin-top:36px; }
+@media (min-width:820px){ .home-sidebar{ position:sticky; top:100px; } }
+.sidebar-card{ background:var(--paper-2); border:1px solid var(--line); border-radius:16px; padding:22px 24px 10px; }
+.sidebar-heading{ font-family:"Fraunces",serif; margin:0; font-size:1.3rem; color:var(--ink); }
+.sidebar-heading::before{ content:"📚"; margin-right:8px; }
+.sidebar-sub{ color:var(--muted); font-size:.85rem; margin:.15em 0 1.1em; }
+.reading-list{ list-style:none; margin:0; padding:0; counter-reset:none; }
+.reading-item{ display:flex; gap:13px; align-items:flex-start; padding:13px 0; border-top:1px solid var(--line); }
+.reading-item:first-child{ border-top:0; padding-top:2px; }
+.reading-num{
+  flex:0 0 auto; width:26px; height:26px; border-radius:50%;
+  background:rgba(13,115,96,.1); color:var(--accent);
+  font-family:"Fraunces",serif; font-weight:600; font-size:.82rem;
+  display:flex; align-items:center; justify-content:center; margin-top:2px;
+}
+.book-meta{ display:flex; flex-direction:column; line-height:1.35; }
+.book-title{ font-weight:600; color:var(--ink); }
+.book-author{ color:var(--muted); font-size:.85rem; font-style:italic; }

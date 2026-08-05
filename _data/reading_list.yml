@@ -1,0 +1,18 @@
+# The books waiting on my shelf, shown in the "Up Next" sidebar.
+# To change the list, just edit this file: add, remove or reorder entries,
+# then commit and push. Each book needs a title; author is optional.
+
+- title: "Sapiens: A Brief History of Humankind"
+  author: "Yuval Noah Harari"
+
+- title: "Prisoners of Geography"
+  author: "Tim Marshall"
+
+- title: "Thinking, Fast and Slow"
+  author: "Daniel Kahneman"
+
+- title: "Guns, Germs, and Steel"
+  author: "Jared Diamond"
+
+- title: "Life 3.0: Being Human in the Age of AI"
+  author: "Max Tegmark"
