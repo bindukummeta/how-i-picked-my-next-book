@@ -22,12 +22,6 @@ layout: default
       <p class="series-card-desc">{{ s.short | escape }}</p>
       <span class="series-card-cta">Explore the series &rarr;</span>
     </a>
-    {%- else -%}
-    <div class="series-card is-soon" aria-disabled="true">
-      <span class="series-soon-badge">Coming soon</span>
-      <h2 class="series-card-title">{{ s.name | escape }}</h2>
-      <p class="series-card-desc">{{ s.short | escape }}</p>
-    </div>
     {%- endif -%}
     {%- endfor -%}
   </div>
