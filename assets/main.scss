@@ -123,6 +123,14 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
 }
 
 // post page typography
+// full-width photo banner at the top of a page (e.g. About)
+.page-hero{
+  height:clamp(220px,34vw,380px); margin:0 0 34px;
+  background-size:cover; background-position:center 42%;
+  border-radius:18px; border:1px solid var(--line);
+  box-shadow:0 14px 40px rgba(18,63,55,.14);
+}
+@media (max-width:600px){ .page-hero{ border-radius:0; margin-left:-15px; margin-right:-15px; } }
 .post-title{ font-size:clamp(2rem,5vw,3rem); }
 .post-content{ font-size:1.09rem; }
 .post-content h2{ margin-top:1.8em; }

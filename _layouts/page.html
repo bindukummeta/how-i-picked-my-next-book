@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{%- if page.hero_image -%}
+<div class="page-hero" role="img"
+     aria-label="{{ page.hero_alt | default: page.title | escape }}"
+     style="background-image:url('{{ page.hero_image | relative_url }}');"></div>
+{%- endif -%}
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

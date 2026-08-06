@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+hero_image: /assets/images/about-hero.jpg
+hero_alt: "Sunlit Himalayan peak at dawn"
 ---
 
 Hi, I am Himabindu.
