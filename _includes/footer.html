@@ -77,3 +77,18 @@ the next book's post if written; otherwise teases the current open question.
     items.forEach(function (el) { io.observe(el); });
   });
 </script>
+
+{%- comment -%}
+Privacy-friendly analytics (GoatCounter). Counts are private to the dashboard at
+https://iamhimabindu.goatcounter.com. Only loads on the live domain so local
+previews aren't tracked; GoatCounter also skips prerender and honours Do Not Track.
+{%- endcomment -%}
+<script>
+  if (location.hostname === 'iamhimabindu.com') {
+    var gc = document.createElement('script');
+    gc.async = true;
+    gc.src = '//gc.zgo.at/count.js';
+    gc.setAttribute('data-goatcounter', 'https://iamhimabindu.goatcounter.com/count');
+    document.head.appendChild(gc);
+  }
+</script>
