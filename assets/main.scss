@@ -151,6 +151,11 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
   color:#5b5147; font-style:italic; border-radius:0 8px 8px 0;
 }
 
+// 404 page
+.notfound-lead{ color:#5b5147; font-size:1.15rem; }
+.notfound-actions{ margin-top:1.6em; }
+.notfound-actions a{ color:var(--accent); font-weight:600; }
+
 // footer
 .site-footer{ border-top:1px solid var(--line); background:transparent; color:var(--muted); }
 .footer-heading{ font-family:"Fraunces",serif; color:var(--ink); }
