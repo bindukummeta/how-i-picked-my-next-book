@@ -18,6 +18,7 @@ current_question: "What explains prosperity if geography isn't enough?"
 books:
   - title: "Sapiens"
     note: "How do all the pieces of history fit together?"
+    post: "/2026/08/06/sapiens/"
 
   - title: "A Little History of the World"
     note: "Why do countries behave the way they do?"
