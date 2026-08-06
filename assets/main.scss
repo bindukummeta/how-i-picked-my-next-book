@@ -151,6 +151,21 @@ a.series-card:hover .series-card-title{ color:var(--accent); }
   color:#5b5147; font-style:italic; border-radius:0 8px 8px 0;
 }
 
+// "Next in the trail" nav at the foot of a reading-trail post
+.trail-next{
+  display:flex; flex-direction:column; gap:.35em;
+  max-width:900px; margin:40px auto 8px; padding:22px 26px;
+  background:var(--paper-2); border:1px solid var(--line);
+  border-left:4px solid var(--accent); border-radius:0 16px 16px 0;
+}
+.trail-next-label{ font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }
+.trail-next-link{ font-family:"Fraunces",serif; font-size:1.35rem; font-weight:600; color:var(--accent); text-decoration:none; }
+.trail-next-link:hover{ text-decoration:underline; text-underline-offset:3px; }
+.trail-next-link.is-soon{ color:var(--muted); font-style:italic; font-weight:500; }
+.trail-next-note{ color:#5b5147; font-size:.92rem; }
+.trail-next-question{ font-family:"Fraunces",serif; font-style:italic; color:var(--accent); font-size:1.1rem; }
+.trail-next-all{ margin-top:.5em; font-size:.9rem; font-weight:600; color:var(--accent-2); }
+
 // 404 page
 .notfound-lead{ color:#5b5147; font-size:1.15rem; }
 .notfound-actions{ margin-top:1.6em; }

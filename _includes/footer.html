@@ -1,3 +1,35 @@
+{%- comment -%}
+"Next in the trail" navigation — shows only on posts in the reading-trail series.
+Finds this post in _data/reading_list.books (matched by its URL), then links to
+the next book's post if written; otherwise teases the current open question.
+{%- endcomment -%}
+{%- if page.layout == "post" and page.series == "how-i-picked-my-next-book" -%}
+  {%- assign trail = site.data.reading_list -%}
+  {%- assign this_index = -1 -%}
+  {%- for book in trail.books -%}
+    {%- if book.post and book.post == page.url -%}{%- assign this_index = forloop.index0 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if this_index >= 0 -%}
+    {%- assign next_index = this_index | plus: 1 -%}
+    {%- assign next_book = trail.books[next_index] -%}
+    <nav class="trail-next" aria-label="Next in the reading trail">
+      <span class="trail-next-label">Next in the trail</span>
+      {%- if next_book and next_book.post and next_book.post != "" -%}
+      <a class="trail-next-link" href="{{ next_book.post | relative_url }}">
+        {{ next_book.title | escape }} &rarr;
+      </a>
+      {%- if next_book.note -%}<span class="trail-next-note">&#8627; {{ next_book.note | escape }}</span>{%- endif -%}
+      {%- elsif next_book -%}
+      <span class="trail-next-link is-soon">{{ next_book.title | escape }} — reflection coming soon</span>
+      {%- if next_book.note -%}<span class="trail-next-note">&#8627; {{ next_book.note | escape }}</span>{%- endif -%}
+      {%- elsif trail.current_question and trail.current_question != "" -%}
+      <span class="trail-next-question">The question I'm chasing now: &ldquo;{{ trail.current_question | escape }}&rdquo;</span>
+      {%- endif -%}
+      <a class="trail-next-all" href="{{ '/series/how-i-picked-my-next-book/' | relative_url }}">See the whole trail</a>
+    </nav>
+  {%- endif -%}
+{%- endif -%}
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ '/' | relative_url }}"></data>
 
