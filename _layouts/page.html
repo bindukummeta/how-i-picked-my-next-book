@@ -4,7 +4,11 @@ layout: default
 {%- if page.hero_image -%}
 <div class="page-hero" role="img"
      aria-label="{{ page.hero_alt | default: page.title | escape }}"
-     style="background-image:url('{{ page.hero_image | relative_url }}');"></div>
+     style="background-image:url('{{ page.hero_image | relative_url }}');">
+  {%- if page.hero_caption -%}
+  <p class="page-hero-caption">{{ page.hero_caption | escape }}</p>
+  {%- endif -%}
+</div>
 {%- endif -%}
 <article class="post">
 

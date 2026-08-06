@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 hero_image: /assets/images/about-hero.jpg
 hero_alt: "Sunlit Himalayan peak at dawn"
+hero_caption: "Following curiosity, wherever it leads."
 ---
 
 Hi, I am Himabindu.
