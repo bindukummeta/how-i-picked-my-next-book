@@ -9,8 +9,8 @@ description: >-
 author: Himabindu
 email: hello@iamhimabindu.com
 
-# Default social-share preview image (used by jekyll-seo-tag for og:image / twitter card)
-image: /assets/images/about-hero.jpg
+# Large-image Twitter/X card (jekyll-seo-tag). The default share image itself is
+# set below via front-matter defaults, since seo-tag reads `image` per-page.
 twitter:
   card: summary_large_image
 
@@ -27,8 +27,14 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
 
-# Default any post to the book series unless it sets its own `series:`
 defaults:
+  # Default social-share preview image for every page (jekyll-seo-tag og:image).
+  # Any page can override by setting its own `image:` in front matter.
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/about-hero.jpg
+  # Default any post to the book series unless it sets its own `series:`
   - scope:
       path: ""
       type: posts
